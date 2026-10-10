@@ -1,17 +1,99 @@
-# neo_calc
+markdown
+# 🧮 Neo Calc — 3D Animated Calculator
 
-A new Flutter project.
+A minimal, smooth, and 3D animated calculator app built with **Flutter**.
 
-## Getting Started
+<p align="center">
+  <img src="screenshots/main.png" width="200" alt="Main UI" />
+  <img src="screenshots/scientific.png" width="200" alt="Scientific Mode" />
+  <img src="screenshots/history.png" width="200" alt="History Panel" />
+</p>
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- 🎨 **3D Press Animation** — Buttons sink, rotate, and scale on tap with perspective transform
+- 🌈 **5 Accent Themes** — Tap the colored circle to cycle (Purple, Cyan, Coral, Amber, Blue)
+- 🧮 **Scientific Mode** — sin, cos, tan, log, ln, √, π, e, ^, !, (, )
+- 📜 **History Panel** — Persistent storage of last 50 calculations
+- 📳 **Haptic Feedback** — Vibration on every button press
+- 🎬 **Splash Screen** — Elastic animation with ∑ symbol
+- 🌙 **Minimal Dark UI** — Beautiful dark theme with smooth animations
+- 💾 **Theme Persistence** — Your accent choice is saved between sessions
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📱 Screenshots
+
+| Main UI | Scientific Mode | History |
+|---------|-----------------|---------|
+| ![Main](screenshots/main.png) | ![Scientific](screenshots/scientific.png) | ![History](screenshots/history.png) |
+
+---
+
+## 🛠️ Tech Stack
+
+- **Flutter** 3.47+
+- **Dart** 3.13+
+- [math_expressions](https://pub.dev/packages/math_expressions) — Expression parsing
+- [flutter_animate](https://pub.dev/packages/flutter_animate) — Smooth animations
+- [shared_preferences](https://pub.dev/packages/shared_preferences) — Persistent storage
+- [google_fonts](https://pub.dev/packages/google_fonts) — Beautiful typography
+
+---
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/developeroption14/neo_calc.git
+cd neo_calc
+flutter pub get
+flutter run
+📦 Build APK
+bash
+flutter build apk --release --split-per-abi
+The APK will be generated at:
+
+build/app/outputs/flutter-apk/app-arm64-v8a-release.apk (Modern phones)
+
+build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk (Older phones)
+
+📂 Project Structure
+text
+lib/
+├── main.dart                    # Entry point
+├── theme/
+│   └── app_theme.dart           # Color palette
+├── services/
+│   ├── history_service.dart     # History persistence
+│   └── haptic_service.dart      # Vibration control
+├── models/
+│   └── history_item.dart        # History data model
+├── widgets/
+│   ├── calc_button.dart         # 3D animated button
+│   ├── display.dart             # Input/result display
+│   └── history_panel.dart       # History bottom sheet
+└── screens/
+    ├── splash_screen.dart       # Animated splash
+    └── calculator_screen.dart   # Main calculator
+🎨 How to Use
+Basic calculation: Type 7 + 6 = → result 13
+
+Change theme: Tap the colored circle (top-left corner)
+
+Scientific mode: Tap the ƒ icon (top-right)
+
+View history: Tap the 🕐 icon (top-right)
+
+Delete last digit: Tap ⌫
+
+Clear all: Tap C
+
+👨‍💻 Author
+shrabon — @developeroption14
+
+📄 License
+This project is open source and available under the MIT License.
+
+⭐ If you like this project, give it a star!
