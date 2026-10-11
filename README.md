@@ -4,9 +4,9 @@ markdown
 A minimal, smooth, and 3D animated calculator app built with **Flutter**.
 
 <p align="center">
-  <img src="screenshots/main.png" width="200" alt="Main UI" />
-  <img src="screenshots/scientific.png" width="200" alt="Scientific Mode" />
-  <img src="screenshots/history.png" width="200" alt="History Panel" />
+  <img src="main.png" width="200" alt="Main UI" />
+  <img src="scientific.png" width="200" alt="Scientific Mode" />
+  <img src="history.png" width="200" alt="History Panel" />
 </p>
 
 ---
@@ -28,7 +28,7 @@ A minimal, smooth, and 3D animated calculator app built with **Flutter**.
 
 | Main UI | Scientific Mode | History |
 |---------|-----------------|---------|
-| ![Main](screenshots/main.png) | ![Scientific](screenshots/scientific.png) | ![History](screenshots/history.png) |
+| ![Main](main.png) | ![Scientific](scientific.png) | ![History](history.png) |
 
 ---
 
